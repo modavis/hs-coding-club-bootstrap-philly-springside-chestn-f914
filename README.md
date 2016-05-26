@@ -29,7 +29,7 @@ Open this lesson in Nitrous by clicking `Open` at the top of this page.
 
 To build your own website, you'll be writing your code in `index.html` and `css/style.css`.
 
-Open `index.html` in the browser by running in terminal `python -m SimpleHTTPServer 3000`. 
+Open `index.html` in the browser by running in terminal `python -m SimpleHTTPServer 3000`.
 
 Once you have the server running, select `preview` and then `port 3000`.
 
@@ -53,7 +53,7 @@ Bootstrap's CSS is hosted online, so we can link to a URL that includes all thei
 
 There are a lot of different browsers people use nowadays, so sometimes we need to include extra code to make sure our site displays correctly on every browser. Here's what you need to to add to make sure everything functions properly if the user is on Internet Explorer. Add it to the **bottom of your** `<head>` **section before the closing** `</head>` **tag**.
 
-Don't worry if it looks like it's commented out. That's how it's supposed to be written for Internet Explorer. 
+Don't worry if it looks like it's commented out. That's how it's supposed to be written for Internet Explorer.
 
 ```html
 <!--[if lt IE 9]>
@@ -63,7 +63,7 @@ Don't worry if it looks like it's commented out. That's how it's supposed to be 
 ```
 
 ### Step 5: Link Your Own CSS
- 
+
 The last thing before the closing `head` tag, right after the IE support, should be a link to your own css file:
 
 ```html
@@ -87,7 +87,7 @@ Let's add a navigation bar first. A navigation bar is important to keep your use
   <div class="container">
     <div class="navbar navbar-default navbar-static-top" id="my-nav-style" role="navigation">
       <div class="container">
-        <div class="navbar-header"> 
+        <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
@@ -96,7 +96,7 @@ Let's add a navigation bar first. A navigation bar is important to keep your use
           </button>
           <a class="navbar-brand" href="index.html">Home</a>
         </div>
-   
+
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li class="active" id="example-active">
@@ -110,7 +110,7 @@ Let's add a navigation bar first. A navigation bar is important to keep your use
                 </li>
             </ul>
         </div> <!--/.nav-collapse -->
-   
+
     </div> <!-- end second container -->
   </div>
 </div> <!-- end nav-->
@@ -150,17 +150,17 @@ Here's a standard table that has information about Left Shark's tour de fame. Th
   </tr>
   <tr>
     <td>Shark Week</td>
-    <td>Barnes and Noble Warren St</td> 
+    <td>Barnes and Noble Warren St</td>
     <td>Blood in The Water</td>
   </tr>
   <tr>
     <td>Shark Tank</td>
-    <td>Barnes and Noble 17th St</td> 
+    <td>Barnes and Noble 17th St</td>
     <td>Jaws in Japan</td>
   </tr>
   <tr>
     <td>shArk</td>
-    <td>Barnes and Noble Broadway</td> 
+    <td>Barnes and Noble Broadway</td>
     <td>Great White</td>
   </tr>
 </table>
@@ -182,7 +182,7 @@ Check out Bootstrap's list of free glyphicons [here](http://getbootstrap.com/com
 
 Let's say I wanted to use the plus sign glyphicon:
 
-<img src="https://s3.amazonaws.com/after-school-assets/glyphicon.png"> 
+<img src="https://s3.amazonaws.com/after-school-assets/glyphicon.png">
 
 This glyphicon has the name "glyphicon glyphicon-plus". That name is what I would use as the class on a `span` tag:
 
@@ -192,7 +192,7 @@ This glyphicon has the name "glyphicon glyphicon-plus". That name is what I woul
 
 ## Code Recap
 
-You can see all the code for the site in the `example.html` file included in this repository. 
+You can see all the code for the site in the `example.html` file included in this repository.
 
 In this lesson, you didn't write **any** CSS, yet you still managed to have a fully styled website. Did you ever set background colors in the navigation bar? Or the specific colors of the text in the table? Nope! You never wrote a single line of CSS. Bootstrap is a CSS framework that provides the CSS for you. All you had to do was include Bootstraps's classes in your code. Take a look back at the HTML you copy and pasted into `index.html`. For the nav bar you can find this `class="navbar-header"`. Did you ever use that class as a CSS selector? What about `id="glyphicons"`? Did you ever do anything with that ID? So how did the styling show up? Remember, the first thing you did was link Bootstrap's CSS to your `index.html`. Bootstrap allows you to easily style bare-bones HTML by adding their IDs and classes to your HTML.
 
